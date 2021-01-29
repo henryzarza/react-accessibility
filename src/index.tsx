@@ -1,17 +1,36 @@
-import React from 'react';
+import React, { lazy, Suspense } from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route
+} from "react-router-dom";
+
+import './css/index.css';
+
+import { ROUTES } from './constants/routes';
+import Spinner from './components/Spinner';
 import reportWebVitals from './reportWebVitals';
+
+const Home = lazy(() => import('./screens/Home'));
+const Login = lazy(() => import('./screens/Login'));
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Router>
+      <Suspense fallback={<Spinner />}>
+        <Switch>
+          <Route path={ROUTES.LOGIN}>
+            <Login />
+          </Route>
+          <Route path={ROUTES.HOME}>
+            <Home />
+          </Route>
+        </Switch>
+      </Suspense>
+    </Router>
   </React.StrictMode>,
   document.getElementById('root')
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
