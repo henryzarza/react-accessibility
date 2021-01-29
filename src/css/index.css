@@ -1,0 +1,13 @@
+@import "./normalize.css";
+@import "./variables.css";
+@import "./typography.css";
+
+* {
+  font-family: "Poppins", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background-color: var(--porcelan);
+}
