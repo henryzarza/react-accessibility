@@ -1,0 +1,14 @@
+:root {
+  /* Transitions */
+  --transition-duration: 290ms;
+  --transition-function: cubic-bezier(0.79, 0.01, 0.38, 0.99);
+
+  /* General */
+  --content-width: 75rem;
+
+  /* Colors */
+  --white: #FFF;
+  --porcelan: #F7F6F4;
+  --cod-gray: #1E1E1D;
+  --red: #ED4337;
+}
