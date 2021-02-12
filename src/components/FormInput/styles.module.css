@@ -1,0 +1,37 @@
+.container {
+  margin-bottom: 1rem;
+  position: relative;
+  width: 100%;
+}
+
+.input {
+  background-color: var(--westar);
+  border: 1px solid transparent;
+  border-radius: 4px;
+  color: var(--cod-gray);
+  line-height: 0;
+  padding: 20px 16px 12px;
+  width: 100%;
+}
+
+.input + label {
+  color: var(--cod-gray);
+  left: 16px;
+  pointer-events: none;
+  position: absolute;
+  top: 2px;
+  transition: color var(--transition-duration) var(--transition-function);
+  user-select: none;
+}
+
+.input:focus {
+  border-color: var(--blue);
+}
+
+.input:focus + label {
+  color: var(--blue);
+}
+
+.error {
+  color: var(--red);
+}

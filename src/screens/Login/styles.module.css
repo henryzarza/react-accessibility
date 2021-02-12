@@ -1,7 +1,36 @@
-.login {
+.container {
+  display: flex;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.left-container {
   align-items: center;
   display: flex;
-  flex-direction: column;
+  flex: 1;
   justify-content: center;
-  min-height: 100vh;
+  padding: 16px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  max-width: 375px;
+  width: 100%;
+}
+
+.right-container {
+  background: var(--white) url("./assets/login.png") center/cover no-repeat;
+  flex: 1;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 40rem) {
+  .right-container {
+    display: none;
+  }
 }
