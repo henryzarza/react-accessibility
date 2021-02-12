@@ -1,6 +1,8 @@
-function Spinner() {
+import styles from './styles.module.css';
+
+function Spinner(isSmall: { isSmall?: boolean; }) {
   return (
-    <h3>Loading...</h3>
+    <div className={`m-right-2 ${styles.spinner} ${isSmall ? styles.small : ''}`} />
   )
 }
 
