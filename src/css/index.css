@@ -1,6 +1,7 @@
 @import "./normalize.css";
 @import "./variables.css";
 @import "./typography.css";
+@import "./margins.css";
 
 * {
   font-family: "Poppins", sans-serif;
@@ -10,4 +11,47 @@
 
 body {
   background-color: var(--porcelan);
+}
+
+.button {
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 12px 8px;
+  text-align: center;
+  transition: all var(--transition-duration) var(--transition-function);
+}
+
+.button.primary {
+  background-color: var(--blue);
+  border: 1px solid var(--blue);
+  color: var(--white);
+}
+
+.button.primary:hover {
+  background-color: transparent;
+  color: var(--blue);
+}
+
+.button:active {
+  transform: scale(0.98);
+}
+
+.link {
+  color: var(--blue);
+  cursor: pointer;
+  text-decoration: underline;
+  transition: color var(--transition-duration) var(--transition-function);
+}
+
+.link:hover {
+  color: var(--cod-gray);
+  text-decoration: none;
+}
+
+.white-color {
+  color: var(--white);
+}
+
+.blue-color {
+  color: var(--blue);
 }

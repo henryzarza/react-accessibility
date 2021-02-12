@@ -1,25 +1,29 @@
 .title {
+  color: var(--cod-gray);
   font-size: 36px;
   font-weight: 700;
-  line-height: 54px;
+  line-height: 40px;
 }
 
 .small-title {
+  color: var(--cod-gray);
   font-size: 18px;
   font-weight: 700;
   line-height: 24px;
 }
 
 .base-text {
+  color: var(--cod-gray);
   font-size: 16px;
   font-weight: 400;
-  line-height: 24px;
+  line-height: 22px;
 }
 
 .small-text {
+  color: var(--cod-gray);
   font-size: 14px;
   font-weight: 400;
-  line-height: 21px;
+  line-height: 20px;
 }
 
 .fw-bold {
