@@ -1,0 +1,15 @@
+.navbar {
+  align-items: center;
+  background: var(--cod-gray) url("../../assets/navbar.png") no-repeat center / cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 340px;
+  padding: 1rem;
+  width: 100%;
+}
+
+.description {
+  max-width: 480px;
+  width: 100%;
+}
