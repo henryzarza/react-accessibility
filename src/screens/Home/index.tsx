@@ -1,17 +1,18 @@
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
+import Card from './components/Card';
 import styles from './styles.module.css';
+import { CHARACTERS } from './constants';
 
 function Home() {
   return (
-    <div className={styles.app}>
-      <h1 className="title">Home</h1>
-      <a
-        href="https://reactjs.org"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Learn React
-      </a>
-    </div>
+    <>
+      <Navbar />
+      <main className={styles.container}>
+        {CHARACTERS.map(character => <Card key={character.id} data={character} />)}
+      </main>
+      <Footer />
+    </>
   );
 }
 
