@@ -32,6 +32,17 @@ body {
   color: var(--blue);
 }
 
+.button.secondary {
+  background-color: var(--white);
+  border: 1px solid var(--blue);
+  color: var(--blue);
+}
+
+.button.secondary:hover {
+  background-color: var(--blue);
+  color: var(--white);
+}
+
 .button:active {
   transform: scale(0.98);
 }
